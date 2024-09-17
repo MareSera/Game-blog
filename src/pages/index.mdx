@@ -1,0 +1,78 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="Home">
+  <BaseCard title="Home">
+    <div class="flex">
+      <div class="p-6">
+          # Hi there! 👋
+
+          欢迎你
+
+          ## 这里是游戏“风的呼唤与背叛（暂用名）”的官方博客！
+
+          由MareSera、SAW、MysticSoul三名高中生为魈开发的游戏！
+
+          我们将会在这里更新游戏开发日志等内容！
+      </div>
+    </div>
+
+  </BaseCard>
+
+  <BaseCard title="Home" image="/index.webp">
+
+  > ↑  这张图以后会被替换为游戏宣传图！
+# 主页
+
+---
+
+游戏目前还处于新建文件夹阶段....
+
+原本准备开发的游戏被删除，现在已经重新立项！
+
+
+---
+
+## 查看
+
+    <div class="grid grid-cols-2 gap-4">
+      <LinkCard
+        title="开发日志"
+        desc="游戏开发历程的记录"
+        url="/blog"
+        target = "_self"
+      />
+      <LinkCard
+        title="项目"
+        desc="可以查看仓库（不包括游戏本体）"
+        url="/project"
+        target = "_self"
+      />
+      <LinkCard
+        title="时间轴"
+        desc="开发历程"
+        url="/about"
+        target = "_self"
+      />
+      <LinkCard
+        title="友情链接"
+        desc="感谢各位的帮助！"
+        url="/friend"
+        target = "_self"
+      />
+    </div>
+
+
+  </BaseCard>
+</BaseLayout>
+
+

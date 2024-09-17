@@ -1,0 +1,37 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="Friend">
+  <BaseCard title="Friend">
+# 友情链接
+
+这里是所有为我们制作提供过帮助的朋友！
+
+---
+
+    <div class="grid grid-cols-2 gap-4">
+      <LinkCard
+        title="MareSera's Blog"
+        desc="游戏策划"
+        url="https://www.maresera.top/"
+        img="https://blog.maresera.top/profile.webp"
+      />
+      <LinkCard
+        title="EveSunMaple"
+        desc="本博客主题的开发者"
+        url="https://www.saroprock.com"
+        img="https://www.saroprock.com/profile.webp"
+      />
+    </div>
+  </BaseCard>
+</BaseLayout>
+

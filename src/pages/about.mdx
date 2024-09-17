@@ -1,0 +1,28 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="About">
+  <BaseCard title="About">
+
+
+## 时间轴
+
+    <TimeLine
+
+items={[
+{ year: "2024-09-17", event: "删除&重新立项" },
+{ year: "WAITTING", event: "游戏仍在开发…让我们共同努力" },
+]}
+/>
+
+  </BaseCard>
+</BaseLayout>
