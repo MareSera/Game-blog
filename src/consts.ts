@@ -2,9 +2,9 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 // Site title and description
-export const SITE_TAB = "风的呼唤与背叛";
-export const SITE_TITLE = "风的呼唤与背叛";
-export const SITE_DESCRIPTION = "风的呼唤与背叛";
+export const SITE_TAB = "像素量子工作室";
+export const SITE_TITLE = "像素量子工作室";
+export const SITE_DESCRIPTION = "像素量子工作室";
 export const DATE_FORMAT = "ddd MMM DD YYYY";
 
 // User profile information
